@@ -14,7 +14,7 @@ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.
 arduino-cli config init
 arduino-cli core update-index
 # Install Arduino AVR core
-arduino-cli core install esp32:esp32 --additional-urls file://$GITHUB_WORKSPACE/MyArduinoProject/platform.txt
+arduino-cli core install esp32:esp32 --additional-urls file://$GITHUB_WORKSPACE/MyArduinoProject/platform.ini
 # Link Arduino library
 ln -s $GITHUB_WORKSPACE $HOME/Arduino/libraries/CI_Test_Library
 # Compile all *.ino files for the Arduino Uno
