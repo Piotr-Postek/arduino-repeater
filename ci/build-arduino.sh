@@ -19,6 +19,6 @@ arduino-cli core install esp32:esp32
 ln -s $GITHUB_WORKSPACE $HOME/Arduino/libraries/CI_Test_Library
 # Compile all *.ino files for the Arduino Uno
 for f in **/*.ino ; do
-    arduino-cli compile -b esp32:esp32:esp32 $f
+    arduino-cli compile -b esp32:esp32:esp32dev $f
 done
 
